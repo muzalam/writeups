@@ -2,7 +2,7 @@
 title: "How i found Critical vulneribility in NASA: Exposed IAM Admin Panel on Science Cloud Infrastructure"
 date: 2024-10-19T08:09:00+00:00
 draft: false
-difficulty: ["bug-bounty", "enumeration"]
+tages: ["bug-bounty", "enumeration"]
 ---
 
 I found an exposed identity and access management admin panel with bruteforcable credentials on NASA's Science Cloud infrastructure, the platform behind science.data.nasa.gov that hosts petabytes of research data across astrophysics, planetary science, Earth science, and more. Full admin access to the IAM system, found by scanning non-standard ports during recon.

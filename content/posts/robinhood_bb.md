@@ -2,7 +2,7 @@
 title: "How i found Critical vulnerability Robinhood: JWT Signature Bypass ($25,000)"
 date: 2022-10-14T09:50:00-05:00
 draft: false
-difficulty: ""
+tages: ["bug-bounty", "JWT"]
 ---
 
 I found a critical vulnerability in Robinhood where certain API endpoints weren't validating JWT signatures. This meant you could modify the user_id in the token, drop the signature entirely, and the server would just accept it — letting you act as any user. I demonstrated this by changing another user's username. Robinhood awarded their maximum bounty of $25,000.

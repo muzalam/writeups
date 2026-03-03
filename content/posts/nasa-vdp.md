@@ -29,7 +29,7 @@ The IAM service handles user authentication, single sign-on, and role management
 
 They didn't.
 
-I navigated to the admin console, tried a few default creds, and I was in. Full administrative access.
+I navigated to the admin console, bruteforced creds, and I was in. Full administrative access.
 
 ## Impact
 
@@ -60,6 +60,6 @@ On top of that, I discovered that a message queue service running on the same ho
 
 The whole reason I found this is because I didn't stop at the obvious. Most people run their subdomain lists through HTTPX on port 80 and 443, call it a day, and move on. This admin panel was sitting on port 8443. If I'd only scanned the default ports, I would have completely missed it.
 
-The actual vulnerability itself was simpler — default credentials on an admin panel. 
+The actual vulnerability itself was simpler, bruteforcable credentials on an admin panel. 
 
 If you're doing bug bounty, invest time in your enumeration. Scan more ports. Use multiple subdomain sources. Be thorough. The low-hanging fruit isn't always on port 443.

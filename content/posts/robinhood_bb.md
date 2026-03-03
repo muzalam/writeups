@@ -1,5 +1,5 @@
 ---
-title: "Robinhood: JWT Signature Bypass ($25,000)"
+title: "How i found Critical vulnerability Robinhood: JWT Signature Bypass ($25,000)"
 date: 2022-10-14T09:50:00-05:00
 draft: false
 difficulty: ""

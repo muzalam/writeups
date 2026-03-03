@@ -1,5 +1,5 @@
 ---
-title: "Critical vulneribility in NASA: Exposed IAM Admin Panel on Science Cloud Infrastructure"
+title: "How i found Critical vulneribility in NASA: Exposed IAM Admin Panel on Science Cloud Infrastructure"
 date: 2024-10-19T08:09:00+00:00
 draft: false
 difficulty: ""

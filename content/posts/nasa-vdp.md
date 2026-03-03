@@ -54,7 +54,7 @@ On top of that, I discovered that a message queue service running on the same ho
 - **Oct 29, 2024** — Endpoints no longer accessible, report marked as Resolved
 - **Nov 1, 2024** — Received a Letter of Appreciation from NASA
 
-[NASA comms](/writeups/images/nasa-letter.png)
+![NASA comms](/writeups/images/nasa-letter.png)
 
 ## Takeaways
 

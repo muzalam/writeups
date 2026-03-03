@@ -9,6 +9,12 @@
   --code-bg: #16162a;
   --max-w: 720px;
 }
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid #333;
+}
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; font-size: 16px; }
 main { max-width: var(--max-w); margin: 0 auto; padding: 2rem 1.25rem; }

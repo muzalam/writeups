@@ -1,8 +1,7 @@
 ---
-title: "Robinhood: JWT Signature Bypass — Changing Any User's Username ($25,000)"
+title: "Robinhood: JWT Signature Bypass ($25,000)"
 date: 2022-10-14T09:50:00-05:00
 draft: false
-tags: ["bug-bounty", "jwt", "auth-bypass", "robinhood", "hackerone", "critical"]
 difficulty: ""
 ---
 

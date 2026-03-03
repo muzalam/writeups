@@ -1,0 +1,19 @@
+baseURL = "https://YOURUSERNAME.github.io/writeups/"
+languageCode = "en-us"
+title = "Muzammil on security"
+paginate = 10
+enableRobotsTXT = true
+
+[markup]
+  [markup.highlight]
+    style = "monokai"
+    lineNos = true
+    guessSyntax = true
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  author = "Your Name"
+  description = "Cybersecurity write-ups, CTF solutions, and vulnerability research."
+  tagline = "breaking things, writing it down"

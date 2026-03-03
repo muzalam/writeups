@@ -1,0 +1,32 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="hero-content">
+    <h1 class="hero-title">{{ .Site.Title }}</h1>
+    <p class="hero-tagline">{{ .Site.Params.description }}</p>
+    <div class="terminal-line">
+      <span class="prompt">$</span>
+      <span class="cmd">cat /var/log/writeups/*</span>
+      <span class="cursor">_</span>
+    </div>
+  </div>
+</section>
+
+<section class="posts-section">
+  <h2 class="section-title">Recent Writeups</h2>
+  <div class="post-list">
+    {{ range first 20 (where .Site.RegularPages "Section" "posts") }}
+    <article class="post-card">
+      <div class="post-meta">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 Jan 2006" }}</time>
+        {{ range .Params.tags }}
+        <span class="tag">{{ . }}</span>
+        {{ end }}
+      </div>
+      <h3 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+      <p class="post-summary">{{ .Summary }}</p>
+      <a href="{{ .Permalink }}" class="read-more">Read writeup &rarr;</a>
+    </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

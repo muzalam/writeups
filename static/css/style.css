@@ -64,4 +64,14 @@ img { max-width: 100%; height: auto; }
 .footer-inner { max-width: var(--max-w); margin: 0 auto; padding: 1.25rem; text-align: center; }
 .footer-tagline { font-size: 0.8rem; color: var(--text-dim); margin-bottom: 0.15rem; }
 .footer-copy { font-size: 0.75rem; color: var(--text-dim); }
+.intro { padding: 2rem 0; margin-bottom: 2rem; border-bottom: 1px solid var(--border); }
+.intro-content { display: flex; align-items: center; gap: 1.25rem; }
+.intro-photo { width: 70px; height: 70px; border-radius: 50%; object-fit: cover; border: 1px solid var(--border); }
+.intro-name { font-size: 1.3rem; color: var(--heading); margin-bottom: 0.2rem; }
+.intro-bio { color: var(--text-dim); font-size: 0.9rem; margin-bottom: 0.3rem; }
+.intro-link { font-size: 0.85rem; }
+.pagination { display: flex; justify-content: center; gap: 0.5rem; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+.page-link { padding: 0.4rem 0.75rem; border: 1px solid var(--border); border-radius: 4px; font-size: 0.85rem; color: var(--text-dim); }
+.page-link:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+.page-link.active { background: var(--accent); color: var(--bg); border-color: var(--accent); }
 @media (max-width: 600px) { .hero-title { font-size: 1.4rem; } .header-inner { flex-direction: column; gap: 0.5rem; } }

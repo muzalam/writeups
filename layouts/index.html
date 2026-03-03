@@ -1,8 +1,19 @@
 {{ define "main" }}
+<section class="intro">
+  <div class="intro-content">
+    <img src="{{ "images/me.jpg" | relURL }}" alt="Muzammil" class="intro-photo">
+    <div class="intro-text">
+      <h1 class="intro-name">Muzammil Maqsood</h1>
+      <p class="intro-bio">Security researcher. Bug bounty hunter. I break things and write about it.</p>
+      <a href="https://www.linkedin.com/in/YOUR-LINKEDIN/" class="intro-link">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+{{ $paginator := .Paginate (where .Site.RegularPages "Section" "posts") 4 }}
 <section class="list-section">
-  <h1 class="section-title">Writeups</h1>
   <div class="post-list">
-    {{ range where .Site.RegularPages "Section" "posts" }}
+    {{ range $paginator.Pages }}
     <article class="post-card">
       <div class="post-meta">
         <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 Jan 2006" }}</time>
@@ -16,5 +27,19 @@
     </article>
     {{ end }}
   </div>
+
+  {{ if gt $paginator.TotalPages 1 }}
+  <nav class="pagination">
+    {{ if $paginator.HasPrev }}
+    <a href="{{ $paginator.Prev.URL }}" class="page-link">&laquo; Prev</a>
+    {{ end }}
+    {{ range $paginator.Pagers }}
+    <a href="{{ .URL }}" class="page-link {{ if eq . $paginator }}active{{ end }}">{{ .PageNumber }}</a>
+    {{ end }}
+    {{ if $paginator.HasNext }}
+    <a href="{{ $paginator.Next.URL }}" class="page-link">Next &raquo;</a>
+    {{ end }}
+  </nav>
+  {{ end }}
 </section>
 {{ end }}

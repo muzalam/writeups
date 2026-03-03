@@ -5,7 +5,7 @@ draft: false
 difficulty: ""
 ---
 
-I found an exposed identity and access management admin panel with default credentials on NASA's Science Cloud infrastructure — the platform behind science.data.nasa.gov that hosts petabytes of research data across astrophysics, planetary science, Earth science, and more. Full admin access to the IAM system, found by scanning non-standard ports during recon.
+I found an exposed identity and access management admin panel with default credentials on NASA's Science Cloud infrastructure, the platform behind science.data.nasa.gov that hosts petabytes of research data across astrophysics, planetary science, Earth science, and more. Full admin access to the IAM system, found by scanning non-standard ports during recon.
 
 <!--more-->
 

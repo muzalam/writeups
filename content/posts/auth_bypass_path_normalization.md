@@ -1,6 +1,6 @@
 ---
 title: "Authentication Bypass Through Path Normalization"
-date: 2024-08-15T10:00:00-05:00
+date: 2024-09-15T10:00:00-05:00
 draft: false
 tags: ["auth-bypass", "path-traversal", "web-security", "nginx", "tomcat", "spring"]
 difficulty: ""

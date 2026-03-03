@@ -1,12 +1,5 @@
 <header class="site-header">
   <div class="header-inner">
-    <a href="{{ .Site.BaseURL }}" class="site-logo">
-      <span class="logo-symbol">&gt;_</span>
-      <span class="logo-text">{{ .Site.Title }}</span>
-    </a>
-    <nav class="site-nav">
-      <a href="{{ .Site.BaseURL }}">Home</a>
-      <a href='{{ "posts/" | relURL }}'>Writeups</a>
-    </nav>
+    <a href="{{ .Site.BaseURL }}" class="site-logo">{{ .Site.Title }}</a>
   </div>
 </header>

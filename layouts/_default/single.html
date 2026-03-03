@@ -18,7 +18,7 @@
     {{ .Content }}
   </div>
   <footer class="post-footer">
-    <a href='{{ "posts/" | relURL }}'>&larr; Back to all writeups</a>
+    <a href="{{ .Site.BaseURL }}">&larr; Back to all writeups</a>
   </footer>
 </article>
 {{ end }}

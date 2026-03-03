@@ -2,7 +2,7 @@
 title: "HTTP Request Smuggling: CL.TE, TE.CL, and Detection"
 date: 2024-09-12T10:00:00-05:00
 draft: false
-tags: ["request-smuggling", "http", "web-security", "desync"]
+tags: ["request-smuggling", "http", "web-security"]
 difficulty: ""
 ---
 

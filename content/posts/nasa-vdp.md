@@ -1,5 +1,5 @@
 ---
-title: "NASA: Exposed IAM Admin Panel with Default Credentials on Science Cloud Infrastructure"
+title: "Critical vulneribility in NASA: Exposed IAM Admin Panel on Science Cloud Infrastructure"
 date: 2024-10-19T08:09:00+00:00
 draft: false
 difficulty: ""
@@ -33,7 +33,7 @@ I navigated to the admin console, tried a few default creds, and I was in. Full 
 
 ## Impact
 
-Given that this IAM service sat within NASA's Science Cloud infrastructure, the potential impact here was significant. From the admin panel, an attacker could:
+Given that this IAM service sat within NASA's Science Cloud infrastructure, the potential impact here was critical(P1). From the admin panel, an attacker could:
 
 - Create, modify, or delete any user account in the system
 - Change authentication flows and weaken security policies
@@ -48,7 +48,7 @@ On top of that, I discovered that a message queue service running on the same ho
 ## Timeline
 
 - **Oct 19, 2024** — Submitted the report through Bugcrowd
-- **Oct 21, 2024** — Triaged and validated by Bugcrowd
+- **Oct 21, 2024** — Triaged and validated by Bugcrowd as P1
 - **Oct 21, 2024** — Added additional finding about the message queue service using the same IAM instance
 - **Oct 25, 2024** — NASA changed state to Unresolved (working on fix)
 - **Oct 29, 2024** — Endpoints no longer accessible, report marked as Resolved

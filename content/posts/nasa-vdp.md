@@ -29,7 +29,7 @@ The IAM service handles user authentication, single sign-on, and role management
 
 They didn't.
 
-I navigated to the admin console, bruteforced creds, and I was in. Full administrative access.
+I navigated to the admin console, tried a few defualt creds, and I was in. Full administrative access.
 
 ## Impact
 

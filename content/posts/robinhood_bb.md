@@ -60,5 +60,3 @@ Their team confirmed that this was a recently introduced issue across a few serv
 ## Takeaways
 
 Read the JavaScript. I cannot stress this enough. I didn't find this by running some automated scanner or brute-forcing endpoints. I found it by sitting down, reading their JS bundles, and noticing that a handful of API routes looked different from the rest. That curiosity led to finding endpoints that had a completely broken auth model.
-
-Also — if you find something and you're not sure what to call it, just submit it anyway. I called this an IDOR when it was really a JWT signature bypass. Didn't matter. The impact was clear, and Robinhood's team understood what was going on.

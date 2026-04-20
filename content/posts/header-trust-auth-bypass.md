@@ -1,6 +1,6 @@
 ---
 title: "Authentication Bypass Through Header Trust"
-date: 2026-04-20T10:30:00-05:00
+date: 2024-05-12T10:30:00-05:00
 draft: false
 tags: ["auth-bypass", "session-management", "web-security", "iis", "nginx", "headers", "login-flows", "dfir"]
 difficulty: ""

@@ -1,6 +1,6 @@
 ---
 title: "CDN Authorization Delegation: When Signed Cookies Grant More Than They Should"
-date: 2026-04-20T10:00:00-05:00
+date: 2024-11-08T10:00:00-05:00
 draft: false
 tags: ["auth-bypass", "access-control", "cloudfront", "cdn", "signed-cookies", "aws", "web-security"]
 difficulty: ""
